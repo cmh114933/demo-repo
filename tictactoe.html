@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <!-- 
+    UI Design:
+    What does the site look like?
+    - A board of 3 x 3 cells
+    What can a user do?
+    - Can click on cells in a board
+      - on click: place a piece inside cell
+    - On hover cell:
+      - Put green color if can place piece
+      - Put red color if cannot place piece
+    What happens if game ends?
+    - Show alert message declaring winner, or if draw 
+   -->
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items:center;
+      justify-content: center;;
+    }
+    #board {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60vw;
+    }
+    .cell {
+      height:20vw;
+      width: 20vw;
+      border: solid 1px black;
+      box-sizing: border-box;
+    }
+    .cell:hover {
+      background-color: green;
+    }
+   </style>
+  <div id="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  <script src="./tictactoe.js"></script>
+</body>
+</html>
